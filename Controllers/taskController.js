@@ -33,9 +33,22 @@ export const allTask = bigPromise(async(req,res,next)=>{
 export const deleteTaskById = bigPromise(async(req,res,next)=>{
 
     const task = await Task.findById(req.params.id)
+
+    if(!task){
+        res.status(400).json({
+            success:false,
+            message:"No tasks exist!"
+        })
+    }
+    console.log(task)
+
+    await task.remove()
+
+
     console.log(task)
     res.status(200).json({
-        data:allTask
+        success:true,
+        message:"Task deleted successfully !"
     })
 })
 
