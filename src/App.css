@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+  min-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.footer{
+    
+    height: 55px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #C1C7FE;
+}
+
+.circle{
+display: flex;
+justify-content: center;
+align-items: center;
+height:50px;
+width: 50px;
+border-radius: 50%;
+position: relative;
+top: -30px;
+border: 3px solid white;
+background: #A683E3;
+}
+
+
+.circle .icon
+{
+    cursor: pointer;
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.circle:hover
+{
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 #A683E3;
+    transition: .4s;
+}
+
+  

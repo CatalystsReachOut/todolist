@@ -1,0 +1,142 @@
+.todo__add-popup
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    
+}
+
+
+.todo__add-popup__nav
+{
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #C1C7FE;
+
+}
+
+.text{
+    padding: 12px 12px;
+    height: -webkit-fill-available;
+}
+textarea
+{
+    width: -webkit-fill-available;
+    
+  border: none;
+  outline: none;
+    font-size: 22px;
+    overflow-y: hidden;
+}
+.icon1 ,.icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 12px;
+    
+}
+.icon1 a,.icon2 a{
+
+    font-size: 1.7rem;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: #000;
+}
+.nav a:visited
+{
+    color: #000;
+}
+.nav a:hover
+{
+    color: #fff;
+}
+.nav a:active
+{
+    color: #000;
+}
+
+
+
+
+textarea::placeholder
+{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+    .container
+{
+    width: auto;
+
+}
+#displayDateTime {
+   
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+}
+  @media screen and (max-width: 250px) {
+    body,.container
+    {
+        width: 230px;
+        margin: 0 auto;
+        
+    
+    }
+    #displayDateTime {
+   
+        color: #000000;
+        font-size: 1.2rem;
+    }
+}
+  @media only screen and (min-width: 800px),screen and (min-height: 1000px) {
+    .container
+{
+    width: 650px;
+    height: 100%;
+}
+
+#displayDateTime {
+   
+    color: #000000;
+    font-size: 1.7rem;
+} 
+textarea::placeholder
+{
+    font-size: 30px;
+}
+textarea{
+    font-size: 33px;
+}
+}
+@media only screen and (min-width: 600px),screen and (min-height: 800px) {
+    .container
+{
+    max-width: 500px;
+    height: 100%;
+}
+textarea::placeholder
+{
+    font-size: 30px;
+}
+textarea{
+    font-size: 33px;
+}
+
+#displayDateTime {
+   
+    color: #000000;
+    font-size: 1.7rem;
+}
+
+}

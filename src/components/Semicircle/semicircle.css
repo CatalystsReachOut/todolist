@@ -1,0 +1,11 @@
+.todo__semicircle{
+    height: 110px;
+    background: rgba(15, 38, 249, 0.26);
+    border-radius:50% / 0 0 100% 100%;
+}
+
+.todo__semicircle-heading{
+    text-align: center;
+    padding: 30px 0;
+    
+}
