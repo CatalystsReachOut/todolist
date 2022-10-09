@@ -1,0 +1,25 @@
+.todo__content__task-image{
+    text-align: center;
+}
+
+.todo__content__task-image img{
+    width: 50%;
+}
+
+#displayDateTime{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.todo__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.todo__content__text p{
+    color: #959494;
+}
