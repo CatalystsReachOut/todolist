@@ -1,16 +1,17 @@
-import React from 'react'
+import React , {useState} from 'react';
+import ReactDOM from 'react-dom';
 
-function Tasks({task,setTasks,index}) {
+ export default function Tasks({tasks, index , data, handleEdit,handleDelete})
+  {
 
-  const handleDelete = () => {
-    setTasks(prev => prev.filter(item => prev[index]!== item))
-  }
   return (
     <>
-    <h1 data-ref = {index}>{task}</h1>
-    <button onClick={()=> handleDelete(index)}>Delete</button>
+    <div className="container">
+     <h1 data-ref = {index}>{tasks}</h1>
+        <button onClick={() => handleEdit(index)} >Update Tasks</button>
+        <button onClick={()=>handleDelete(index)}>Delete</button>
+
+    </ div>
     </>
   )
 }
-
-export default Tasks
